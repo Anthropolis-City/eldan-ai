@@ -684,25 +684,40 @@
         let currentSlide = 0;
         let isAnimating = false;
         let currentEduPage = 0; // Для отслеживания страницы курсов
+        let isEduAnimating = false; // Для предотвращения сбоев при быстром клике
 
         const slides = Array.from({length: TOTAL_SLIDES}).map((_, i) => document.getElementById(`slide-${i}`));
         const navLinks = document.querySelectorAll('.nav-link');
 
-        // Пагинация блоков Education
+        // Пагинация блоков Education (Плавное затухание и появление)
         function setEduPage(page) {
+            if (currentEduPage === page || isEduAnimating) return;
+            isEduAnimating = true;
+            
+            const oldPage = currentEduPage;
             currentEduPage = page;
+            
             const pages = document.querySelectorAll('.edu-page');
             const dots = document.querySelectorAll('.edu-dot');
             
-            pages.forEach((el, i) => {
-                if (i === page) {
-                    el.classList.remove('hidden');
-                    setTimeout(() => el.style.opacity = '1', 50);
-                } else {
-                    el.style.opacity = '0';
-                    el.classList.add('hidden');
-                }
-            });
+            // Плавное затухание старой страницы
+            pages[oldPage].style.opacity = '0';
+            
+            setTimeout(() => {
+                pages[oldPage].classList.add('hidden');
+                
+                // Подготовка и плавное появление новой страницы
+                pages[page].style.opacity = '0';
+                pages[page].classList.remove('hidden');
+                
+                // Даем браузеру время отрендерить display: block перед изменением opacity
+                setTimeout(() => {
+                    pages[page].style.opacity = '1';
+                    
+                    // Снимаем блокировку после завершения fade-in
+                    setTimeout(() => { isEduAnimating = false; }, 300);
+                }, 50);
+            }, 300); // Ожидаем завершения transition-opacity (300ms)
 
             dots.forEach((el, i) => {
                 if (i === page) {
