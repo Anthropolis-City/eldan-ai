@@ -271,7 +271,7 @@
             </div>
         </section>
 
-        <!-- Слайд 1: Strategy & Roadmap (Grid) -->
+        <!-- Слайд 1: Strategy & Roadmap -->
         <section class="slide" id="slide-1">
             <div class="slide-inner !justify-center gap-4 md:gap-4 max-w-5xl mx-auto">
                 <h2 class="text-3xl md:text-5xl font-black mb-1 md:mb-2 uppercase text-center md:text-left shrink-0">Strategy & Roadmap</h2>
@@ -446,153 +446,160 @@
                 <h2 class="text-3xl md:text-5xl font-black mb-0.5 md:mb-3 uppercase shrink-0">AI Education</h2>
                 <p class="text-xs md:text-lg text-[var(--text-muted)] mb-2 md:mb-4 shrink-0 px-4">Develop Skills for the New AI Roles.</p>
                 
-                <!-- Враппер блоков с курсами (Используем CSS Grid для идеального распределения) -->
+                <!-- Враппер блоков с курсами -->
                 <div class="w-full px-4 md:px-12 py-1 md:py-2 relative grid min-h-0 flex-grow">
                     
                     <!-- Блок 1 (4 курса) -->
-                    <div class="edu-page edu-page-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 w-full max-w-6xl mx-auto transition-opacity duration-300 col-start-1 row-start-1 z-10 min-h-0 h-full">
+                    <div class="edu-page edu-page-0 flex flex-col lg:grid lg:grid-cols-4 gap-2 md:gap-4 w-full max-w-6xl mx-auto transition-opacity duration-300 col-start-1 row-start-1 z-10 min-h-0 h-full">
                         <!-- Course 1 -->
-                        <div class="hover-gradient-card glass-panel pt-2 pb-2.5 px-3 md:pt-4 md:pb-6 md:px-5 flex flex-col justify-between gap-1.5 md:gap-4 group cursor-pointer relative min-h-0 h-full w-full">
-                            <div class="flex flex-row md:flex-col items-center md:items-center gap-2.5 md:gap-3 min-w-0 flex-grow text-left md:text-center w-full">
-                                <div class="w-10 h-10 md:w-14 md:h-14 shrink-0 rounded-lg md:rounded-xl bg-brand-red/20 md:bg-transparent text-brand-red flex items-center justify-center text-xl md:text-3xl group-hover:scale-110 transition-transform md:shadow-none shadow-[0_0_15px_rgba(255,0,0,0.2)]">
+                        <div class="hover-gradient-card glass-panel p-3 md:p-4 lg:p-5 flex flex-row lg:flex-col items-center justify-between gap-3 lg:gap-4 group cursor-pointer relative min-h-0 h-full w-full">
+                            <div class="flex items-center lg:flex-col gap-3 lg:gap-3 min-w-0 flex-grow text-left lg:text-center w-full">
+                                <div class="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-lg lg:rounded-xl bg-brand-red/20 lg:bg-transparent text-brand-red flex items-center justify-center text-2xl lg:text-3xl group-hover:scale-110 transition-transform lg:shadow-none shadow-[0_0_15px_rgba(255,0,0,0.2)]">
                                     <i class="fa-solid fa-earth-americas"></i>
                                 </div>
                                 <div class="min-w-0 flex-grow w-full flex flex-col justify-center">
-                                    <div class="flex items-center gap-1.5 md:gap-2 md:justify-center mb-0.5 md:mb-1 w-full min-w-0">
-                                        <h4 class="font-bold uppercase text-[12px] md:text-[14px] lg:text-base leading-tight truncate">AI for Everyone</h4>
-                                        <span class="bg-brand-accent text-black text-[7px] md:text-[8px] font-black px-1.5 py-0.5 rounded-sm uppercase shrink-0">Free</span>
+                                    <div class="flex items-center gap-2 lg:justify-center mb-0.5 lg:mb-1 w-full min-w-0">
+                                        <h4 class="font-bold uppercase text-[13px] md:text-[14px] lg:text-base leading-tight truncate">AI for Everyone</h4>
+                                        <span class="bg-brand-accent text-black text-[8px] md:text-[9px] font-black px-1.5 py-0.5 rounded-sm uppercase shrink-0">Free</span>
                                     </div>
-                                    <p class="text-[9px] md:text-xs text-[var(--text-muted)] leading-tight line-clamp-2 md:line-clamp-3">30-step course on AI basics.</p>
+                                    <p class="text-[10px] md:text-[11px] lg:text-xs text-[var(--text-muted)] leading-tight truncate lg:whitespace-normal lg:line-clamp-2">30-step course on AI basics.</p>
                                 </div>
                             </div>
-                            <div class="flex justify-center w-full mt-0 md:mt-auto pt-0.5 md:pt-0 shrink-0">
-                                <span class="inline-flex justify-center bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-6 md:px-8 py-1 md:py-2 rounded-md text-[9px] md:text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mb-0 md:mb-2 shrink-0 transition-all">
-                                    Join <i class="fa-solid fa-arrow-right"></i>
-                                </span>
+                            <div class="lg:hidden w-10 h-10 md:w-12 md:h-12 shrink-0 rounded-lg flex items-center justify-center bg-brand-red/10 text-brand-red group-hover:bg-brand-red group-hover:text-white transition-all text-sm md:text-base shadow-sm border border-brand-red/30">
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
+                            <span class="hidden lg:inline-flex w-full justify-center bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-4 py-2 rounded-md text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mt-auto shrink-0 transition-all">
+                                Join <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                         </div>
 
                         <!-- Course 2 -->
-                        <div class="hover-gradient-card glass-panel pt-2 pb-2.5 px-3 md:pt-4 md:pb-6 md:px-5 flex flex-col justify-between gap-1.5 md:gap-4 group cursor-pointer relative min-h-0 h-full w-full">
-                            <div class="flex flex-row md:flex-col items-center md:items-center gap-2.5 md:gap-3 min-w-0 flex-grow text-left md:text-center w-full">
-                                <div class="w-10 h-10 md:w-14 md:h-14 shrink-0 rounded-lg md:rounded-xl bg-brand-accent/20 md:bg-transparent text-brand-accent flex items-center justify-center text-xl md:text-3xl group-hover:scale-110 transition-transform md:shadow-none shadow-[0_0_15px_rgba(255,204,0,0.2)]">
+                        <div class="hover-gradient-card glass-panel p-3 md:p-4 lg:p-5 flex flex-row lg:flex-col items-center justify-between gap-3 lg:gap-4 group cursor-pointer relative min-h-0 h-full w-full">
+                            <div class="flex items-center lg:flex-col gap-3 lg:gap-3 min-w-0 flex-grow text-left lg:text-center w-full">
+                                <div class="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-lg lg:rounded-xl bg-brand-accent/20 lg:bg-transparent text-brand-accent flex items-center justify-center text-2xl lg:text-3xl group-hover:scale-110 transition-transform lg:shadow-none shadow-[0_0_15px_rgba(255,204,0,0.2)]">
                                     <i class="fa-solid fa-code"></i>
                                 </div>
                                 <div class="min-w-0 flex-grow w-full flex flex-col justify-center">
-                                    <div class="flex items-center gap-1.5 md:gap-2 md:justify-center mb-0.5 md:mb-1 w-full min-w-0">
-                                        <h4 class="font-bold uppercase text-[12px] md:text-[14px] lg:text-base leading-tight truncate">Vibe Coding</h4>
+                                    <div class="flex items-center gap-2 lg:justify-center mb-0.5 lg:mb-1 w-full min-w-0">
+                                        <h4 class="font-bold uppercase text-[13px] md:text-[14px] lg:text-base leading-tight truncate">Vibe Coding</h4>
                                     </div>
-                                    <p class="text-[9px] md:text-xs text-[var(--text-muted)] leading-tight line-clamp-2 md:line-clamp-3">Development for beginners.</p>
+                                    <p class="text-[10px] md:text-[11px] lg:text-xs text-[var(--text-muted)] leading-tight truncate lg:whitespace-normal lg:line-clamp-2">Development for beginners.</p>
                                 </div>
                             </div>
-                            <div class="flex justify-center w-full mt-0 md:mt-auto pt-0.5 md:pt-0 shrink-0">
-                                <span class="inline-flex justify-center bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-6 md:px-8 py-1 md:py-2 rounded-md text-[9px] md:text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mb-0 md:mb-2 shrink-0 transition-all">
-                                    Join <i class="fa-solid fa-arrow-right"></i>
-                                </span>
+                            <div class="lg:hidden w-10 h-10 md:w-12 md:h-12 shrink-0 rounded-lg flex items-center justify-center bg-brand-accent/10 text-brand-accent group-hover:bg-brand-accent group-hover:text-black transition-all text-sm md:text-base shadow-sm border border-brand-accent/30">
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
+                            <span class="hidden lg:inline-flex w-full justify-center bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-4 py-2 rounded-md text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mt-auto shrink-0 transition-all">
+                                Join <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                         </div>
 
                         <!-- Course 3 -->
-                        <div class="hover-gradient-card glass-panel pt-2 pb-2.5 px-3 md:pt-4 md:pb-6 md:px-5 flex flex-col justify-between gap-1.5 md:gap-4 group cursor-pointer relative min-h-0 h-full w-full">
-                            <div class="flex flex-row md:flex-col items-center md:items-center gap-2.5 md:gap-3 min-w-0 flex-grow text-left md:text-center w-full">
-                                <div class="w-10 h-10 md:w-14 md:h-14 shrink-0 rounded-lg md:rounded-xl bg-brand-red/20 md:bg-transparent text-brand-red flex items-center justify-center text-xl md:text-3xl group-hover:scale-110 transition-transform md:shadow-none shadow-[0_0_15px_rgba(255,0,0,0.2)]">
+                        <div class="hover-gradient-card glass-panel p-3 md:p-4 lg:p-5 flex flex-row lg:flex-col items-center justify-between gap-3 lg:gap-4 group cursor-pointer relative min-h-0 h-full w-full">
+                            <div class="flex items-center lg:flex-col gap-3 lg:gap-3 min-w-0 flex-grow text-left lg:text-center w-full">
+                                <div class="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-lg lg:rounded-xl bg-brand-red/20 lg:bg-transparent text-brand-red flex items-center justify-center text-2xl lg:text-3xl group-hover:scale-110 transition-transform lg:shadow-none shadow-[0_0_15px_rgba(255,0,0,0.2)]">
                                     <i class="fa-solid fa-laptop-code"></i>
                                 </div>
                                 <div class="min-w-0 flex-grow w-full flex flex-col justify-center">
-                                    <div class="flex items-center gap-1.5 md:gap-2 md:justify-center mb-0.5 md:mb-1 w-full min-w-0">
-                                        <h4 class="font-bold uppercase text-[12px] md:text-[14px] lg:text-base leading-tight truncate">Software Vibe Eng.</h4>
+                                    <div class="flex items-center gap-2 lg:justify-center mb-0.5 lg:mb-1 w-full min-w-0">
+                                        <h4 class="font-bold uppercase text-[13px] md:text-[14px] lg:text-base leading-tight truncate">Software Vibe Eng.</h4>
                                     </div>
-                                    <p class="text-[9px] md:text-xs text-[var(--text-muted)] leading-tight line-clamp-2 md:line-clamp-3">Fast development for engineers.</p>
+                                    <p class="text-[10px] md:text-[11px] lg:text-xs text-[var(--text-muted)] leading-tight truncate lg:whitespace-normal lg:line-clamp-2">Fast development for engineers.</p>
                                 </div>
                             </div>
-                            <div class="flex justify-center w-full mt-0 md:mt-auto pt-0.5 md:pt-0 shrink-0">
-                                <span class="inline-flex justify-center bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-6 md:px-8 py-1 md:py-2 rounded-md text-[9px] md:text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mb-0 md:mb-2 shrink-0 transition-all">
-                                    Join <i class="fa-solid fa-arrow-right"></i>
-                                </span>
+                            <div class="lg:hidden w-10 h-10 md:w-12 md:h-12 shrink-0 rounded-lg flex items-center justify-center bg-brand-red/10 text-brand-red group-hover:bg-brand-red group-hover:text-white transition-all text-sm md:text-base shadow-sm border border-brand-red/30">
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
+                            <span class="hidden lg:inline-flex w-full justify-center bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-4 py-2 rounded-md text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mt-auto shrink-0 transition-all">
+                                Join <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                         </div>
 
                         <!-- Course 4 -->
-                        <div class="hover-gradient-card glass-panel pt-2 pb-2.5 px-3 md:pt-4 md:pb-6 md:px-5 flex flex-col justify-between gap-1.5 md:gap-4 group cursor-pointer relative min-h-0 h-full w-full">
-                            <div class="flex flex-row md:flex-col items-center md:items-center gap-2.5 md:gap-3 min-w-0 flex-grow text-left md:text-center w-full">
-                                <div class="w-10 h-10 md:w-14 md:h-14 shrink-0 rounded-lg md:rounded-xl bg-brand-accent/20 md:bg-transparent text-brand-accent flex items-center justify-center text-xl md:text-3xl group-hover:scale-110 transition-transform md:shadow-none shadow-[0_0_15px_rgba(255,204,0,0.2)]">
+                        <div class="hover-gradient-card glass-panel p-3 md:p-4 lg:p-5 flex flex-row lg:flex-col items-center justify-between gap-3 lg:gap-4 group cursor-pointer relative min-h-0 h-full w-full">
+                            <div class="flex items-center lg:flex-col gap-3 lg:gap-3 min-w-0 flex-grow text-left lg:text-center w-full">
+                                <div class="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-lg lg:rounded-xl bg-brand-accent/20 lg:bg-transparent text-brand-accent flex items-center justify-center text-2xl lg:text-3xl group-hover:scale-110 transition-transform lg:shadow-none shadow-[0_0_15px_rgba(255,204,0,0.2)]">
                                     <i class="fa-solid fa-microchip"></i>
                                 </div>
                                 <div class="min-w-0 flex-grow w-full flex flex-col justify-center">
-                                    <div class="flex items-center gap-1.5 md:gap-2 md:justify-center mb-0.5 md:mb-1 w-full min-w-0">
-                                        <h4 class="font-bold uppercase text-[12px] md:text-[14px] lg:text-base leading-tight truncate">AI Engineering</h4>
+                                    <div class="flex items-center gap-2 lg:justify-center mb-0.5 lg:mb-1 w-full min-w-0">
+                                        <h4 class="font-bold uppercase text-[13px] md:text-[14px] lg:text-base leading-tight truncate">AI Engineering</h4>
                                     </div>
-                                    <p class="text-[9px] md:text-xs text-[var(--text-muted)] leading-tight line-clamp-2 md:line-clamp-3">Specialization to become an AI engineer.</p>
+                                    <p class="text-[10px] md:text-[11px] lg:text-xs text-[var(--text-muted)] leading-tight truncate lg:whitespace-normal lg:line-clamp-2">Specialization to become an AI engineer.</p>
                                 </div>
                             </div>
-                            <div class="flex justify-center w-full mt-0 md:mt-auto pt-0.5 md:pt-0 shrink-0">
-                                <span class="inline-flex justify-center bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-6 md:px-8 py-1 md:py-2 rounded-md text-[9px] md:text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mb-0 md:mb-2 shrink-0 transition-all">
-                                    Join <i class="fa-solid fa-arrow-right"></i>
-                                </span>
+                            <div class="lg:hidden w-10 h-10 md:w-12 md:h-12 shrink-0 rounded-lg flex items-center justify-center bg-brand-accent/10 text-brand-accent group-hover:bg-brand-accent group-hover:text-black transition-all text-sm md:text-base shadow-sm border border-brand-accent/30">
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
+                            <span class="hidden lg:inline-flex w-full justify-center bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-4 py-2 rounded-md text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mt-auto shrink-0 transition-all">
+                                Join <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                         </div>
                     </div>
 
                     <!-- Блок 2 (3 курса) -->
-                    <div class="edu-page edu-page-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 w-full max-w-5xl mx-auto transition-opacity duration-300 col-start-1 row-start-1 pointer-events-none z-0 hidden content-start" style="opacity: 0;">
+                    <div class="edu-page edu-page-1 flex flex-col lg:grid lg:grid-cols-3 gap-2 md:gap-4 w-full max-w-5xl mx-auto transition-opacity duration-300 col-start-1 row-start-1 pointer-events-none z-0 hidden" style="opacity: 0;">
                         <!-- Course 5 -->
-                        <div class="hover-gradient-card glass-panel pt-2 pb-2.5 px-3 md:pt-4 md:pb-6 md:px-5 flex flex-col justify-between gap-1.5 md:gap-4 group cursor-pointer relative min-h-0 h-full w-full">
-                            <div class="flex flex-row md:flex-col items-center md:items-center gap-2.5 md:gap-3 min-w-0 flex-grow text-left md:text-center w-full">
-                                <div class="w-10 h-10 md:w-14 md:h-14 shrink-0 rounded-lg md:rounded-xl bg-brand-red/20 md:bg-transparent text-brand-red flex items-center justify-center text-xl md:text-3xl group-hover:scale-110 transition-transform md:shadow-none shadow-[0_0_15px_rgba(255,0,0,0.2)]">
+                        <div class="hover-gradient-card glass-panel p-3 md:p-4 lg:p-5 flex flex-row lg:flex-col items-center justify-between gap-3 lg:gap-4 group cursor-pointer relative min-h-0 h-full w-full">
+                            <div class="flex items-center lg:flex-col gap-3 lg:gap-3 min-w-0 flex-grow text-left lg:text-center w-full">
+                                <div class="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-lg lg:rounded-xl bg-brand-red/20 lg:bg-transparent text-brand-red flex items-center justify-center text-2xl lg:text-3xl group-hover:scale-110 transition-transform lg:shadow-none shadow-[0_0_15px_rgba(255,0,0,0.2)]">
                                     <i class="fa-solid fa-rocket"></i>
                                 </div>
                                 <div class="min-w-0 flex-grow w-full flex flex-col justify-center">
-                                    <div class="flex items-center gap-1.5 md:gap-2 md:justify-center mb-0.5 md:mb-1 w-full min-w-0">
-                                        <h4 class="font-bold uppercase text-[12px] md:text-[14px] lg:text-base leading-tight truncate">AI Bootcamp</h4>
+                                    <div class="flex items-center gap-2 lg:justify-center mb-0.5 lg:mb-1 w-full min-w-0">
+                                        <h4 class="font-bold uppercase text-[13px] md:text-[14px] lg:text-base leading-tight truncate">AI Bootcamp</h4>
                                     </div>
-                                    <p class="text-[9px] md:text-xs text-[var(--text-muted)] leading-tight line-clamp-2 md:line-clamp-3">Building AI products in 8 weeks.</p>
+                                    <p class="text-[10px] md:text-[11px] lg:text-xs text-[var(--text-muted)] leading-tight truncate lg:whitespace-normal lg:line-clamp-2">Building AI products in 8 weeks.</p>
                                 </div>
                             </div>
-                            <div class="flex justify-center w-full mt-0 md:mt-auto pt-0.5 md:pt-0 shrink-0">
-                                <span class="inline-flex justify-center bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-6 md:px-8 py-1 md:py-2 rounded-md text-[9px] md:text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mb-0 md:mb-2 shrink-0 transition-all">
-                                    Join <i class="fa-solid fa-arrow-right"></i>
-                                </span>
+                            <div class="lg:hidden w-10 h-10 md:w-12 md:h-12 shrink-0 rounded-lg flex items-center justify-center bg-brand-red/10 text-brand-red group-hover:bg-brand-red group-hover:text-white transition-all text-sm md:text-base shadow-sm border border-brand-red/30">
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
+                            <span class="hidden lg:inline-flex w-full justify-center bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-4 py-2 rounded-md text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mt-auto shrink-0 transition-all">
+                                Join <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                         </div>
 
                         <!-- Course 6 -->
-                        <div class="hover-gradient-card glass-panel pt-2 pb-2.5 px-3 md:pt-4 md:pb-6 md:px-5 flex flex-col justify-between gap-1.5 md:gap-4 group cursor-pointer relative min-h-0 h-full w-full">
-                            <div class="flex flex-row md:flex-col items-center md:items-center gap-2.5 md:gap-3 min-w-0 flex-grow text-left md:text-center w-full">
-                                <div class="w-10 h-10 md:w-14 md:h-14 shrink-0 rounded-lg md:rounded-xl bg-brand-accent/20 md:bg-transparent text-brand-accent flex items-center justify-center text-xl md:text-3xl group-hover:scale-110 transition-transform md:shadow-none shadow-[0_0_15px_rgba(255,204,0,0.2)]">
+                        <div class="hover-gradient-card glass-panel p-3 md:p-4 lg:p-5 flex flex-row lg:flex-col items-center justify-between gap-3 lg:gap-4 group cursor-pointer relative min-h-0 h-full w-full">
+                            <div class="flex items-center lg:flex-col gap-3 lg:gap-3 min-w-0 flex-grow text-left lg:text-center w-full">
+                                <div class="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-lg lg:rounded-xl bg-brand-accent/20 lg:bg-transparent text-brand-accent flex items-center justify-center text-2xl lg:text-3xl group-hover:scale-110 transition-transform lg:shadow-none shadow-[0_0_15px_rgba(255,204,0,0.2)]">
                                     <i class="fa-solid fa-robot"></i>
                                 </div>
                                 <div class="min-w-0 flex-grow w-full flex flex-col justify-center">
-                                    <div class="flex items-center gap-1.5 md:gap-2 md:justify-center mb-0.5 md:mb-1 w-full min-w-0">
-                                        <h4 class="font-bold uppercase text-[12px] md:text-[14px] lg:text-base leading-tight truncate">n8n + AI Agents</h4>
+                                    <div class="flex items-center gap-2 lg:justify-center mb-0.5 lg:mb-1 w-full min-w-0">
+                                        <h4 class="font-bold uppercase text-[13px] md:text-[14px] lg:text-base leading-tight truncate">n8n + AI Agents</h4>
                                     </div>
-                                    <p class="text-[9px] md:text-xs text-[var(--text-muted)] leading-tight line-clamp-2 md:line-clamp-3">Automation basics and AI agents.</p>
+                                    <p class="text-[10px] md:text-[11px] lg:text-xs text-[var(--text-muted)] leading-tight truncate lg:whitespace-normal lg:line-clamp-2">Automation basics and AI agents.</p>
                                 </div>
                             </div>
-                            <div class="flex justify-center w-full mt-0 md:mt-auto pt-0.5 md:pt-0 shrink-0">
-                                <span class="inline-flex justify-center bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-6 md:px-8 py-1 md:py-2 rounded-md text-[9px] md:text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mb-0 md:mb-2 shrink-0 transition-all">
-                                    Join <i class="fa-solid fa-arrow-right"></i>
-                                </span>
+                            <div class="lg:hidden w-10 h-10 md:w-12 md:h-12 shrink-0 rounded-lg flex items-center justify-center bg-brand-accent/10 text-brand-accent group-hover:bg-brand-accent group-hover:text-black transition-all text-sm md:text-base shadow-sm border border-brand-accent/30">
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
+                            <span class="hidden lg:inline-flex w-full justify-center bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-4 py-2 rounded-md text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mt-auto shrink-0 transition-all">
+                                Join <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                         </div>
 
                         <!-- Course 7 -->
-                        <div class="hover-gradient-card glass-panel pt-2 pb-2.5 px-3 md:pt-4 md:pb-6 md:px-5 flex flex-col justify-between gap-1.5 md:gap-4 group cursor-pointer relative min-h-0 h-full w-full sm:col-span-2 lg:col-span-1 max-w-md mx-auto lg:max-w-none">
-                            <div class="flex flex-row md:flex-col items-center md:items-center gap-2.5 md:gap-3 min-w-0 flex-grow text-left md:text-center w-full">
-                                <div class="w-10 h-10 md:w-14 md:h-14 shrink-0 rounded-lg md:rounded-xl bg-brand-red/20 md:bg-transparent text-brand-red flex items-center justify-center text-xl md:text-3xl group-hover:scale-110 transition-transform md:shadow-none shadow-[0_0_15px_rgba(255,0,0,0.2)]">
+                        <div class="hover-gradient-card glass-panel p-3 md:p-4 lg:p-5 flex flex-row lg:flex-col items-center justify-between gap-3 lg:gap-4 group cursor-pointer relative min-h-0 h-full w-full">
+                            <div class="flex items-center lg:flex-col gap-3 lg:gap-3 min-w-0 flex-grow text-left lg:text-center w-full">
+                                <div class="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-lg lg:rounded-xl bg-brand-red/20 lg:bg-transparent text-brand-red flex items-center justify-center text-2xl lg:text-3xl group-hover:scale-110 transition-transform lg:shadow-none shadow-[0_0_15px_rgba(255,0,0,0.2)]">
                                     <i class="fa-solid fa-network-wired"></i>
                                 </div>
                                 <div class="min-w-0 flex-grow w-full flex flex-col justify-center">
-                                    <div class="flex items-center gap-1.5 md:gap-2 md:justify-center mb-0.5 md:mb-1 w-full min-w-0">
-                                        <h4 class="font-bold uppercase text-[12px] md:text-[14px] lg:text-base leading-tight truncate">AI & System Design</h4>
+                                    <div class="flex items-center gap-2 lg:justify-center mb-0.5 lg:mb-1 w-full min-w-0">
+                                        <h4 class="font-bold uppercase text-[13px] md:text-[14px] lg:text-base leading-tight truncate">AI & System Design</h4>
                                     </div>
-                                    <p class="text-[9px] md:text-xs text-[var(--text-muted)] leading-tight line-clamp-2 md:line-clamp-3">Advanced system design, tech, and tools.</p>
+                                    <p class="text-[10px] md:text-[11px] lg:text-xs text-[var(--text-muted)] leading-tight truncate lg:whitespace-normal lg:line-clamp-2">Advanced system design, tech, and tools.</p>
                                 </div>
                             </div>
-                            <div class="flex justify-center w-full mt-0 md:mt-auto pt-0.5 md:pt-0 shrink-0">
-                                <span class="inline-flex justify-center bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-6 md:px-8 py-1 md:py-2 rounded-md text-[9px] md:text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mb-0 md:mb-2 shrink-0 transition-all">
-                                    Join <i class="fa-solid fa-arrow-right"></i>
-                                </span>
+                            <div class="lg:hidden w-10 h-10 md:w-12 md:h-12 shrink-0 rounded-lg flex items-center justify-center bg-brand-red/10 text-brand-red group-hover:bg-brand-red group-hover:text-white transition-all text-sm md:text-base shadow-sm border border-brand-red/30">
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
+                            <span class="hidden lg:inline-flex w-full justify-center bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-4 py-2 rounded-md text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mt-auto shrink-0 transition-all">
+                                Join <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                         </div>
                     </div>
 
