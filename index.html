@@ -171,7 +171,7 @@
             text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
         }
 
-        /* Убираем скроллбары для горизонтальной карусели курсов */
+        /* Убираем скроллбары */
         .hide-scrollbar {
             -ms-overflow-style: none;
             scrollbar-width: none;
@@ -287,7 +287,7 @@
                             <div class="text-left truncate lg:whitespace-normal">
                                 <h4 class="font-bold uppercase text-lg md:text-sm lg:hidden leading-tight truncate">AI Strategy</h4>
                                 <h3 class="hidden lg:block text-4xl font-black uppercase md:mb-3 md:text-gradient leading-tight">AI Strategy</h3>
-                                <p class="text-xs md:text-[10px] text-[var(--text-muted)] uppercase tracking-widest mt-1 hidden md:block lg:hidden truncate">How to Transform into an AI-First Company</p>
+                                <p class="text-xs md:text-[10px] text-[var(--text-muted)] uppercase tracking-widest mt-1 lg:hidden truncate">How to Transform into an AI-First Company</p>
                                 <p class="text-[var(--text-muted)] text-base md:mb-6 max-w-sm hidden lg:block">How to Transform into an AI-First Company</p>
                             </div>
                         </div>
@@ -440,97 +440,173 @@
             </div>
         </section>
 
-        <!-- Слайд 6: Education (Pages) -->
+        <!-- Слайд 6: Education -->
         <section class="slide" id="slide-6">
             <div class="slide-inner text-center !justify-center gap-2 md:gap-2 w-full max-w-full px-0">
                 <h2 class="text-3xl md:text-5xl font-black mb-1 md:mb-3 uppercase shrink-0">AI Education</h2>
                 <p class="text-xs md:text-lg text-[var(--text-muted)] mb-3 md:mb-4 shrink-0 px-4">Develop Skills for the New AI Roles.</p>
                 
-                <!-- Враппер блоков с курсами (отступы предотвращают обрезание свечения) -->
-                <div class="w-full px-4 md:px-12 py-2 md:py-4 relative">
+                <!-- Враппер блоков с курсами -->
+                <div class="w-full px-4 md:px-12 py-2 relative md:min-h-[250px] flex items-center justify-center">
                     
                     <!-- Блок 1 (4 курса) -->
-                    <div class="edu-page grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 w-full max-w-6xl mx-auto transition-opacity duration-300">
-                        
+                    <div class="edu-page edu-page-0 flex flex-col md:flex-row md:flex-wrap justify-center gap-3 md:gap-4 w-full max-w-6xl mx-auto transition-opacity duration-300">
                         <!-- Course 1 -->
-                        <div class="hover-gradient-card glass-panel p-3 md:p-5 flex flex-col items-center group cursor-pointer relative justify-between min-h-[160px] md:min-h-[200px]">
-                            <div class="flex flex-col items-center">
-                                <i class="fa-solid fa-earth-americas text-2xl md:text-4xl text-brand-red mb-2 md:mb-3 group-hover:scale-110 transition-transform"></i>
-                                <h3 class="text-sm md:text-lg font-bold mb-1 uppercase leading-tight">AI for Everyone</h3>
-                                <div class="bg-brand-accent text-black text-[8px] md:text-[9px] font-black px-2 py-0.5 rounded-sm mb-1.5 md:mb-2 uppercase">Free</div>
-                                <p class="text-[9px] md:text-xs text-[var(--text-muted)] mb-3 leading-tight px-1 md:px-2">30-step course on AI basics.</p>
+                        <div class="w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)] hover-gradient-card glass-panel p-4 md:p-5 flex flex-row md:flex-col items-center justify-between gap-4 md:gap-0 group cursor-pointer relative min-h-[auto] md:h-[240px] shrink-0">
+                            <div class="flex items-center md:flex-col gap-4 md:gap-0 min-w-0 flex-grow w-full text-left md:text-center">
+                                <div class="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-lg md:rounded-none bg-brand-red/20 md:bg-transparent text-brand-red flex items-center justify-center text-2xl md:text-4xl md:mb-3 group-hover:scale-110 transition-transform md:shadow-none shadow-[0_0_15px_rgba(255,0,0,0.2)]">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                </div>
+                                <div class="truncate md:whitespace-normal flex-grow w-full">
+                                    <div class="flex items-center gap-2 md:justify-center mb-0.5 md:mb-1">
+                                        <h4 class="font-bold uppercase text-sm md:text-lg leading-tight truncate">AI for Everyone</h4>
+                                        <span class="bg-brand-accent text-black text-[8px] md:text-[9px] font-black px-1.5 py-0.5 rounded-sm uppercase shrink-0">Free</span>
+                                    </div>
+                                    <p class="text-[10px] text-[var(--text-muted)] mt-0.5 md:mt-0 truncate md:whitespace-normal leading-tight">30-step course on AI basics.</p>
+                                </div>
                             </div>
-                            <span class="bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-3 md:px-5 py-1.5 md:py-2 rounded-md text-[8px] md:text-[10px] uppercase tracking-widest font-bold btn-gradient-hover flex items-center gap-1 md:gap-1.5 shadow-sm mt-auto">Join <i class="fa-solid fa-arrow-right"></i></span>
+                            <div class="md:hidden w-10 h-10 shrink-0 rounded-lg flex items-center justify-center bg-brand-red/10 text-brand-red group-hover:bg-brand-red group-hover:text-white transition-all text-sm shadow-sm border border-brand-red/30">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <span class="hidden md:flex bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-4 py-1.5 md:py-2 rounded-md text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mt-auto">
+                                Join <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                         </div>
 
                         <!-- Course 2 -->
-                        <div class="hover-gradient-card glass-panel p-3 md:p-5 flex flex-col items-center group cursor-pointer relative justify-between min-h-[160px] md:min-h-[200px]">
-                            <div class="flex flex-col items-center">
-                                <i class="fa-solid fa-code text-2xl md:text-4xl text-brand-accent mb-2 md:mb-3 group-hover:scale-110 transition-transform"></i>
-                                <h3 class="text-sm md:text-lg font-bold mb-1 uppercase leading-tight">Vibe Coding</h3>
-                                <p class="text-[9px] md:text-xs text-[var(--text-muted)] mb-3 leading-tight px-1 md:px-2 mt-1 md:mt-2">Development for beginners.</p>
+                        <div class="w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)] hover-gradient-card glass-panel p-4 md:p-5 flex flex-row md:flex-col items-center justify-between gap-4 md:gap-0 group cursor-pointer relative min-h-[auto] md:h-[240px] shrink-0">
+                            <div class="flex items-center md:flex-col gap-4 md:gap-0 min-w-0 flex-grow w-full text-left md:text-center">
+                                <div class="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-lg md:rounded-none bg-brand-accent/20 md:bg-transparent text-brand-accent flex items-center justify-center text-2xl md:text-4xl md:mb-3 group-hover:scale-110 transition-transform md:shadow-none shadow-[0_0_15px_rgba(255,204,0,0.2)]">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <div class="truncate md:whitespace-normal flex-grow w-full">
+                                    <div class="flex items-center gap-2 md:justify-center mb-0.5 md:mb-1">
+                                        <h4 class="font-bold uppercase text-sm md:text-lg leading-tight truncate">Vibe Coding</h4>
+                                    </div>
+                                    <p class="text-[10px] text-[var(--text-muted)] mt-0.5 md:mt-0 truncate md:whitespace-normal leading-tight">Development for beginners.</p>
+                                </div>
                             </div>
-                            <span class="bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-3 md:px-5 py-1.5 md:py-2 rounded-md text-[8px] md:text-[10px] uppercase tracking-widest font-bold btn-gradient-hover flex items-center gap-1 md:gap-1.5 shadow-sm mt-auto">Join <i class="fa-solid fa-arrow-right"></i></span>
+                            <div class="md:hidden w-10 h-10 shrink-0 rounded-lg flex items-center justify-center bg-brand-accent/10 text-brand-accent group-hover:bg-brand-accent group-hover:text-black transition-all text-sm shadow-sm border border-brand-accent/30">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <span class="hidden md:flex bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-4 py-1.5 md:py-2 rounded-md text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mt-auto">
+                                Join <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                         </div>
 
                         <!-- Course 3 -->
-                        <div class="hover-gradient-card glass-panel p-3 md:p-5 flex flex-col items-center group cursor-pointer relative justify-between min-h-[160px] md:min-h-[200px]">
-                            <div class="flex flex-col items-center">
-                                <i class="fa-solid fa-laptop-code text-2xl md:text-4xl text-brand-red mb-2 md:mb-3 group-hover:scale-110 transition-transform"></i>
-                                <h3 class="text-sm md:text-lg font-bold mb-1 uppercase leading-tight">Software Vibe Eng.</h3>
-                                <p class="text-[9px] md:text-xs text-[var(--text-muted)] mb-3 leading-tight px-1 md:px-2 mt-1 md:mt-2">Fast development for engineers.</p>
+                        <div class="w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)] hover-gradient-card glass-panel p-4 md:p-5 flex flex-row md:flex-col items-center justify-between gap-4 md:gap-0 group cursor-pointer relative min-h-[auto] md:h-[240px] shrink-0">
+                            <div class="flex items-center md:flex-col gap-4 md:gap-0 min-w-0 flex-grow w-full text-left md:text-center">
+                                <div class="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-lg md:rounded-none bg-brand-red/20 md:bg-transparent text-brand-red flex items-center justify-center text-2xl md:text-4xl md:mb-3 group-hover:scale-110 transition-transform md:shadow-none shadow-[0_0_15px_rgba(255,0,0,0.2)]">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                                <div class="truncate md:whitespace-normal flex-grow w-full">
+                                    <div class="flex items-center gap-2 md:justify-center mb-0.5 md:mb-1">
+                                        <h4 class="font-bold uppercase text-sm md:text-lg leading-tight truncate">Software Vibe Eng.</h4>
+                                    </div>
+                                    <p class="text-[10px] text-[var(--text-muted)] mt-0.5 md:mt-0 truncate md:whitespace-normal leading-tight">Fast development for engineers.</p>
+                                </div>
                             </div>
-                            <span class="bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-3 md:px-5 py-1.5 md:py-2 rounded-md text-[8px] md:text-[10px] uppercase tracking-widest font-bold btn-gradient-hover flex items-center gap-1 md:gap-1.5 shadow-sm mt-auto">Join <i class="fa-solid fa-arrow-right"></i></span>
+                            <div class="md:hidden w-10 h-10 shrink-0 rounded-lg flex items-center justify-center bg-brand-red/10 text-brand-red group-hover:bg-brand-red group-hover:text-white transition-all text-sm shadow-sm border border-brand-red/30">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <span class="hidden md:flex bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-4 py-1.5 md:py-2 rounded-md text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mt-auto">
+                                Join <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                         </div>
 
                         <!-- Course 4 -->
-                        <div class="hover-gradient-card glass-panel p-3 md:p-5 flex flex-col items-center group cursor-pointer relative justify-between min-h-[160px] md:min-h-[200px]">
-                            <div class="flex flex-col items-center">
-                                <i class="fa-solid fa-microchip text-2xl md:text-4xl text-brand-accent mb-2 md:mb-3 group-hover:scale-110 transition-transform"></i>
-                                <h3 class="text-sm md:text-lg font-bold mb-1 uppercase leading-tight">AI Engineering</h3>
-                                <p class="text-[9px] md:text-xs text-[var(--text-muted)] mb-3 leading-tight px-1 md:px-2 mt-1 md:mt-2">Specialization to become an AI engineer.</p>
+                        <div class="w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)] hover-gradient-card glass-panel p-4 md:p-5 flex flex-row md:flex-col items-center justify-between gap-4 md:gap-0 group cursor-pointer relative min-h-[auto] md:h-[240px] shrink-0">
+                            <div class="flex items-center md:flex-col gap-4 md:gap-0 min-w-0 flex-grow w-full text-left md:text-center">
+                                <div class="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-lg md:rounded-none bg-brand-accent/20 md:bg-transparent text-brand-accent flex items-center justify-center text-2xl md:text-4xl md:mb-3 group-hover:scale-110 transition-transform md:shadow-none shadow-[0_0_15px_rgba(255,204,0,0.2)]">
+                                    <i class="fa-solid fa-microchip"></i>
+                                </div>
+                                <div class="truncate md:whitespace-normal flex-grow w-full">
+                                    <div class="flex items-center gap-2 md:justify-center mb-0.5 md:mb-1">
+                                        <h4 class="font-bold uppercase text-sm md:text-lg leading-tight truncate">AI Engineering</h4>
+                                    </div>
+                                    <p class="text-[10px] text-[var(--text-muted)] mt-0.5 md:mt-0 truncate md:whitespace-normal leading-tight">Specialization to become an AI engineer.</p>
+                                </div>
                             </div>
-                            <span class="bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-3 md:px-5 py-1.5 md:py-2 rounded-md text-[8px] md:text-[10px] uppercase tracking-widest font-bold btn-gradient-hover flex items-center gap-1 md:gap-1.5 shadow-sm mt-auto">Join <i class="fa-solid fa-arrow-right"></i></span>
+                            <div class="md:hidden w-10 h-10 shrink-0 rounded-lg flex items-center justify-center bg-brand-accent/10 text-brand-accent group-hover:bg-brand-accent group-hover:text-black transition-all text-sm shadow-sm border border-brand-accent/30">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <span class="hidden md:flex bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-4 py-1.5 md:py-2 rounded-md text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mt-auto">
+                                Join <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                         </div>
                     </div>
 
                     <!-- Блок 2 (3 курса) -->
-                    <div class="edu-page grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 w-full max-w-4xl mx-auto transition-opacity duration-300 hidden">
+                    <div class="edu-page edu-page-1 flex flex-col md:flex-row md:flex-wrap justify-center gap-3 md:gap-4 w-full max-w-6xl mx-auto transition-opacity duration-300 hidden absolute inset-x-0 md:static px-4 md:px-0" style="opacity: 0;">
                         <!-- Course 5 -->
-                        <div class="hover-gradient-card glass-panel p-3 md:p-5 flex flex-col items-center group cursor-pointer relative justify-between min-h-[160px] md:min-h-[200px]">
-                            <div class="flex flex-col items-center">
-                                <i class="fa-solid fa-rocket text-2xl md:text-4xl text-brand-red mb-2 md:mb-3 group-hover:scale-110 transition-transform"></i>
-                                <h3 class="text-sm md:text-lg font-bold mb-1 uppercase leading-tight">AI Bootcamp</h3>
-                                <p class="text-[9px] md:text-xs text-[var(--text-muted)] mb-3 leading-tight px-1 md:px-2 mt-1 md:mt-2">Building AI products in 8 weeks, from basic LLMs to Project.</p>
+                        <div class="w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)] hover-gradient-card glass-panel p-4 md:p-5 flex flex-row md:flex-col items-center justify-between gap-4 md:gap-0 group cursor-pointer relative min-h-[auto] md:h-[240px] shrink-0">
+                            <div class="flex items-center md:flex-col gap-4 md:gap-0 min-w-0 flex-grow w-full text-left md:text-center">
+                                <div class="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-lg md:rounded-none bg-brand-red/20 md:bg-transparent text-brand-red flex items-center justify-center text-2xl md:text-4xl md:mb-3 group-hover:scale-110 transition-transform md:shadow-none shadow-[0_0_15px_rgba(255,0,0,0.2)]">
+                                    <i class="fa-solid fa-rocket"></i>
+                                </div>
+                                <div class="truncate md:whitespace-normal flex-grow w-full">
+                                    <div class="flex items-center gap-2 md:justify-center mb-0.5 md:mb-1">
+                                        <h4 class="font-bold uppercase text-sm md:text-lg leading-tight truncate">AI Bootcamp</h4>
+                                    </div>
+                                    <p class="text-[10px] text-[var(--text-muted)] mt-0.5 md:mt-0 truncate md:whitespace-normal leading-tight">Building AI products in 8 weeks.</p>
+                                </div>
                             </div>
-                            <span class="bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-3 md:px-5 py-1.5 md:py-2 rounded-md text-[8px] md:text-[10px] uppercase tracking-widest font-bold btn-gradient-hover flex items-center gap-1 md:gap-1.5 shadow-sm mt-auto">Join <i class="fa-solid fa-arrow-right"></i></span>
+                            <div class="md:hidden w-10 h-10 shrink-0 rounded-lg flex items-center justify-center bg-brand-red/10 text-brand-red group-hover:bg-brand-red group-hover:text-white transition-all text-sm shadow-sm border border-brand-red/30">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <span class="hidden md:flex bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-4 py-1.5 md:py-2 rounded-md text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mt-auto">
+                                Join <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                         </div>
 
                         <!-- Course 6 -->
-                        <div class="hover-gradient-card glass-panel p-3 md:p-5 flex flex-col items-center group cursor-pointer relative justify-between min-h-[160px] md:min-h-[200px]">
-                            <div class="flex flex-col items-center">
-                                <i class="fa-solid fa-robot text-2xl md:text-4xl text-brand-accent mb-2 md:mb-3 group-hover:scale-110 transition-transform"></i>
-                                <h3 class="text-sm md:text-lg font-bold mb-1 uppercase leading-tight">n8n + AI Agents</h3>
-                                <p class="text-[9px] md:text-xs text-[var(--text-muted)] mb-3 leading-tight px-1 md:px-2 mt-1 md:mt-2">Automation basics and AI agents.</p>
+                        <div class="w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)] hover-gradient-card glass-panel p-4 md:p-5 flex flex-row md:flex-col items-center justify-between gap-4 md:gap-0 group cursor-pointer relative min-h-[auto] md:h-[240px] shrink-0">
+                            <div class="flex items-center md:flex-col gap-4 md:gap-0 min-w-0 flex-grow w-full text-left md:text-center">
+                                <div class="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-lg md:rounded-none bg-brand-accent/20 md:bg-transparent text-brand-accent flex items-center justify-center text-2xl md:text-4xl md:mb-3 group-hover:scale-110 transition-transform md:shadow-none shadow-[0_0_15px_rgba(255,204,0,0.2)]">
+                                    <i class="fa-solid fa-robot"></i>
+                                </div>
+                                <div class="truncate md:whitespace-normal flex-grow w-full">
+                                    <div class="flex items-center gap-2 md:justify-center mb-0.5 md:mb-1">
+                                        <h4 class="font-bold uppercase text-sm md:text-lg leading-tight truncate">n8n + AI Agents</h4>
+                                    </div>
+                                    <p class="text-[10px] text-[var(--text-muted)] mt-0.5 md:mt-0 truncate md:whitespace-normal leading-tight">Automation basics and AI agents.</p>
+                                </div>
                             </div>
-                            <span class="bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-3 md:px-5 py-1.5 md:py-2 rounded-md text-[8px] md:text-[10px] uppercase tracking-widest font-bold btn-gradient-hover flex items-center gap-1 md:gap-1.5 shadow-sm mt-auto">Join <i class="fa-solid fa-arrow-right"></i></span>
+                            <div class="md:hidden w-10 h-10 shrink-0 rounded-lg flex items-center justify-center bg-brand-accent/10 text-brand-accent group-hover:bg-brand-accent group-hover:text-black transition-all text-sm shadow-sm border border-brand-accent/30">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <span class="hidden md:flex bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-4 py-1.5 md:py-2 rounded-md text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mt-auto">
+                                Join <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                         </div>
 
-                        <!-- Course 7 (Центрируется на мобильных) -->
-                        <div class="hover-gradient-card glass-panel p-3 md:p-5 flex flex-col items-center group cursor-pointer relative justify-between min-h-[160px] md:min-h-[200px] col-span-2 lg:col-span-1 w-[80%] lg:w-full mx-auto">
-                            <div class="flex flex-col items-center">
-                                <i class="fa-solid fa-network-wired text-2xl md:text-4xl text-brand-red mb-2 md:mb-3 group-hover:scale-110 transition-transform"></i>
-                                <h3 class="text-sm md:text-lg font-bold mb-1 uppercase leading-tight">AI & System Design</h3>
-                                <p class="text-[9px] md:text-xs text-[var(--text-muted)] mb-3 leading-tight px-1 md:px-2 mt-1 md:mt-2">Advanced course on system design, tech, and tools.</p>
+                        <!-- Course 7 -->
+                        <div class="w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)] hover-gradient-card glass-panel p-4 md:p-5 flex flex-row md:flex-col items-center justify-between gap-4 md:gap-0 group cursor-pointer relative min-h-[auto] md:h-[240px] shrink-0">
+                            <div class="flex items-center md:flex-col gap-4 md:gap-0 min-w-0 flex-grow w-full text-left md:text-center">
+                                <div class="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-lg md:rounded-none bg-brand-red/20 md:bg-transparent text-brand-red flex items-center justify-center text-2xl md:text-4xl md:mb-3 group-hover:scale-110 transition-transform md:shadow-none shadow-[0_0_15px_rgba(255,0,0,0.2)]">
+                                    <i class="fa-solid fa-network-wired"></i>
+                                </div>
+                                <div class="truncate md:whitespace-normal flex-grow w-full">
+                                    <div class="flex items-center gap-2 md:justify-center mb-0.5 md:mb-1">
+                                        <h4 class="font-bold uppercase text-sm md:text-lg leading-tight truncate">AI & System Design</h4>
+                                    </div>
+                                    <p class="text-[10px] text-[var(--text-muted)] mt-0.5 md:mt-0 truncate md:whitespace-normal leading-tight">Advanced system design, tech, and tools.</p>
+                                </div>
                             </div>
-                            <span class="bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-3 md:px-5 py-1.5 md:py-2 rounded-md text-[8px] md:text-[10px] uppercase tracking-widest font-bold btn-gradient-hover flex items-center gap-1 md:gap-1.5 shadow-sm mt-auto">Join <i class="fa-solid fa-arrow-right"></i></span>
+                            <div class="md:hidden w-10 h-10 shrink-0 rounded-lg flex items-center justify-center bg-brand-red/10 text-brand-red group-hover:bg-brand-red group-hover:text-white transition-all text-sm shadow-sm border border-brand-red/30">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <span class="hidden md:flex bg-black/5 dark:bg-white/5 border border-[var(--glass-border)] px-4 py-1.5 md:py-2 rounded-md text-[10px] uppercase tracking-widest font-bold btn-gradient-hover items-center gap-1.5 shadow-sm mt-auto">
+                                Join <i class="fa-solid fa-arrow-right"></i>
+                            </span>
                         </div>
                     </div>
 
                 </div>
 
                 <!-- Pagination Dots для курсов -->
-                <div class="flex justify-center gap-3 mt-1 md:mt-2">
+                <div class="flex justify-center gap-3 mt-4 md:mt-6 relative z-10">
                     <button onclick="setEduPage(0)" class="edu-dot w-8 h-2 rounded-full bg-brand-accent shadow-[0_0_10px_rgba(255,204,0,0.5)] transition-all cursor-pointer"></button>
                     <button onclick="setEduPage(1)" class="edu-dot w-8 h-2 rounded-full bg-black/20 dark:bg-white/20 transition-all cursor-pointer"></button>
                 </div>
@@ -576,17 +652,17 @@
                     </div>
                     
                     <div class="font-mono text-[10px] md:text-[10px] text-[var(--text-muted)] uppercase tracking-widest text-center sm:text-right w-full sm:w-auto">
-                        &copy; 2026 Eldan AI Technologies. All rights reserved.
+                        &copy; 2026 Eldan AI. All rights reserved.
                     </div>
                 </footer>
             </div>
         </section>
 
         <!-- Слайд 8: Transformation Roadmap (Тёмный подвал) -->
-        <section class="slide bg-[#050505] text-white z-30" id="slide-8">
+        <section class="slide bg-[var(--bg-main)] text-[var(--text-main)] z-30" id="slide-8">
             <div class="slide-inner flex flex-col h-full max-w-4xl mx-auto w-full !justify-center">
                 <div class="flex-grow flex flex-col justify-center">
-                    <h2 class="text-3xl md:text-4xl font-black mb-6 md:mb-8 mt-2 md:mt-4 uppercase text-center tracking-widest shrink-0 text-white">Transformation Roadmap</h2>
+                    <h2 class="text-3xl md:text-4xl font-black mb-6 md:mb-8 mt-2 md:mt-4 uppercase text-center tracking-widest shrink-0">Transformation Roadmap</h2>
                     
                     <div class="flex flex-col gap-4 md:gap-5 w-full px-3 md:px-12 flex-grow min-h-0">
                         
@@ -594,12 +670,12 @@
                             <div class="w-14 h-14 md:w-14 md:h-14 rounded-lg md:rounded-xl bg-brand-red/20 text-brand-red flex items-center justify-center text-2xl md:text-2xl shrink-0 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(255,0,0,0.2)]">
                                 <i class="fa-solid fa-chess-knight"></i>
                             </div>
-                            <div class="flex-grow border-b border-white/10 pb-3 md:pb-4 group-hover:border-brand-red/50 transition-colors flex justify-between items-center h-full">
+                            <div class="flex-grow border-b border-[var(--glass-border)] pb-3 md:pb-4 group-hover:border-brand-red/50 transition-colors flex justify-between items-center h-full">
                                 <div>
-                                    <h3 class="uppercase tracking-widest font-bold text-base md:text-lg mb-0.5 group-hover:text-brand-red transition-colors text-white">01. AI Strategy</h3>
-                                    <p class="text-xs md:text-xs text-gray-400 uppercase font-mono tracking-wider">How to Transform into an AI-First Company</p>
+                                    <h3 class="uppercase tracking-widest font-bold text-base md:text-lg mb-0.5 group-hover:text-brand-red transition-colors">01. AI Strategy</h3>
+                                    <p class="text-xs md:text-xs text-[var(--text-muted)] uppercase font-mono tracking-wider">How to Transform into an AI-First Company</p>
                                 </div>
-                                <div class="w-10 h-10 md:w-10 md:h-10 rounded-lg bg-brand-red/10 text-brand-red flex items-center justify-center text-sm md:text-sm shrink-0 group-hover:bg-brand-red group-hover:text-white transition-colors">
+                                <div class="w-10 h-10 md:w-10 md:h-10 rounded-lg bg-brand-red/10 text-brand-red flex items-center justify-center text-sm md:text-sm shrink-0 group-hover:bg-brand-red group-hover:text-[var(--bg-main)] transition-colors">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -609,10 +685,10 @@
                             <div class="w-14 h-14 md:w-14 md:h-14 rounded-lg md:rounded-xl bg-brand-accent/20 text-brand-accent flex items-center justify-center text-2xl md:text-2xl shrink-0 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(255,204,0,0.2)]">
                                 <i class="fa-solid fa-layer-group"></i>
                             </div>
-                            <div class="flex-grow border-b border-white/10 pb-3 md:pb-4 group-hover:border-brand-accent/50 transition-colors flex justify-between items-center h-full">
+                            <div class="flex-grow border-b border-[var(--glass-border)] pb-3 md:pb-4 group-hover:border-brand-accent/50 transition-colors flex justify-between items-center h-full">
                                 <div>
-                                    <h3 class="uppercase tracking-widest font-bold text-base md:text-lg mb-0.5 group-hover:text-brand-accent transition-colors text-white">02. AI Platform</h3>
-                                    <p class="text-xs md:text-xs text-gray-400 uppercase font-mono tracking-wider">How to Build AI Agents for Process Automation</p>
+                                    <h3 class="uppercase tracking-widest font-bold text-base md:text-lg mb-0.5 group-hover:text-brand-accent transition-colors">02. AI Platform</h3>
+                                    <p class="text-xs md:text-xs text-[var(--text-muted)] uppercase font-mono tracking-wider">How to Build AI Agents for Process Automation</p>
                                 </div>
                                 <div class="w-10 h-10 md:w-10 md:h-10 rounded-lg bg-brand-accent/10 text-brand-accent flex items-center justify-center text-sm md:text-sm shrink-0 group-hover:bg-brand-accent group-hover:text-black transition-colors">
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -624,12 +700,12 @@
                             <div class="w-14 h-14 md:w-14 md:h-14 rounded-lg md:rounded-xl bg-brand-red/20 text-brand-red flex items-center justify-center text-2xl md:text-2xl shrink-0 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(255,0,0,0.2)]">
                                 <i class="fa-solid fa-user-astronaut"></i>
                             </div>
-                            <div class="flex-grow border-b border-white/10 pb-3 md:pb-4 group-hover:border-brand-red/50 transition-colors flex justify-between items-center h-full">
+                            <div class="flex-grow border-b border-[var(--glass-border)] pb-3 md:pb-4 group-hover:border-brand-red/50 transition-colors flex justify-between items-center h-full">
                                 <div>
-                                    <h3 class="uppercase tracking-widest font-bold text-base md:text-lg mb-0.5 group-hover:text-brand-red transition-colors text-white">03. AI Employees</h3>
-                                    <p class="text-xs md:text-xs text-gray-400 uppercase font-mono tracking-wider">How to Empower Humans in Business Processes</p>
+                                    <h3 class="uppercase tracking-widest font-bold text-base md:text-lg mb-0.5 group-hover:text-brand-red transition-colors">03. AI Employees</h3>
+                                    <p class="text-xs md:text-xs text-[var(--text-muted)] uppercase font-mono tracking-wider">How to Empower Humans in Business Processes</p>
                                 </div>
-                                <div class="w-10 h-10 md:w-10 md:h-10 rounded-lg bg-brand-red/10 text-brand-red flex items-center justify-center text-sm md:text-sm shrink-0 group-hover:bg-brand-red group-hover:text-white transition-colors">
+                                <div class="w-10 h-10 md:w-10 md:h-10 rounded-lg bg-brand-red/10 text-brand-red flex items-center justify-center text-sm md:text-sm shrink-0 group-hover:bg-brand-red group-hover:text-[var(--bg-main)] transition-colors">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -639,10 +715,10 @@
                             <div class="w-14 h-14 md:w-14 md:h-14 rounded-lg md:rounded-xl bg-brand-accent/20 text-brand-accent flex items-center justify-center text-2xl md:text-2xl shrink-0 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(255,204,0,0.2)]">
                                 <i class="fa-solid fa-boxes-stacked"></i>
                             </div>
-                            <div class="flex-grow border-b border-white/10 pb-3 md:pb-4 group-hover:border-brand-accent/50 transition-colors flex justify-between items-center h-full">
+                            <div class="flex-grow border-b border-[var(--glass-border)] pb-3 md:pb-4 group-hover:border-brand-accent/50 transition-colors flex justify-between items-center h-full">
                                 <div>
-                                    <h3 class="uppercase tracking-widest font-bold text-base md:text-lg mb-0.5 group-hover:text-brand-accent transition-colors text-white">04. AI Products</h3>
-                                    <p class="text-xs md:text-xs text-gray-400 uppercase font-mono tracking-wider">How to Serve the Human Good</p>
+                                    <h3 class="uppercase tracking-widest font-bold text-base md:text-lg mb-0.5 group-hover:text-brand-accent transition-colors">04. AI Products</h3>
+                                    <p class="text-xs md:text-xs text-[var(--text-muted)] uppercase font-mono tracking-wider">How to Serve the Human Good</p>
                                 </div>
                                 <div class="w-10 h-10 md:w-10 md:h-10 rounded-lg bg-brand-accent/10 text-brand-accent flex items-center justify-center text-sm md:text-sm shrink-0 group-hover:bg-brand-accent group-hover:text-black transition-colors">
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -656,10 +732,10 @@
                             </div>
                             <div class="flex-grow pb-3 md:pb-4 transition-colors flex justify-between items-center h-full">
                                 <div>
-                                    <h3 class="uppercase tracking-widest font-bold text-base md:text-lg mb-0.5 group-hover:text-brand-red transition-colors text-white">05. AI Education</h3>
-                                    <p class="text-xs md:text-xs text-gray-400 uppercase font-mono tracking-wider">How to Develop Skills for New AI Roles</p>
+                                    <h3 class="uppercase tracking-widest font-bold text-base md:text-lg mb-0.5 group-hover:text-brand-red transition-colors">05. AI Education</h3>
+                                    <p class="text-xs md:text-xs text-[var(--text-muted)] uppercase font-mono tracking-wider">How to Develop Skills for New AI Roles</p>
                                 </div>
-                                <div class="w-10 h-10 md:w-10 md:h-10 rounded-lg bg-brand-red/10 text-brand-red flex items-center justify-center text-sm md:text-sm shrink-0 group-hover:bg-brand-red group-hover:text-white transition-colors">
+                                <div class="w-10 h-10 md:w-10 md:h-10 rounded-lg bg-brand-red/10 text-brand-red flex items-center justify-center text-sm md:text-sm shrink-0 group-hover:bg-brand-red group-hover:text-[var(--bg-main)] transition-colors">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
@@ -683,13 +759,13 @@
         
         let currentSlide = 0;
         let isAnimating = false;
-        let currentEduPage = 0; // Для отслеживания страницы курсов
-        let isEduAnimating = false; // Для предотвращения сбоев при быстром клике
+        let currentEduPage = 0; 
+        let isEduAnimating = false; 
 
         const slides = Array.from({length: TOTAL_SLIDES}).map((_, i) => document.getElementById(`slide-${i}`));
         const navLinks = document.querySelectorAll('.nav-link');
 
-        // Пагинация блоков Education (Плавное затухание и появление)
+        // Пагинация блоков Education
         function setEduPage(page) {
             if (currentEduPage === page || isEduAnimating) return;
             isEduAnimating = true;
@@ -700,25 +776,26 @@
             const pages = document.querySelectorAll('.edu-page');
             const dots = document.querySelectorAll('.edu-dot');
             
-            // Плавное затухание старой страницы
+            // Плавное скрытие старой страницы
             pages[oldPage].style.opacity = '0';
             
             setTimeout(() => {
                 pages[oldPage].classList.add('hidden');
+                pages[oldPage].classList.remove('md:flex'); // Убираем flex для ПК
                 
-                // Подготовка и плавное появление новой страницы
-                pages[page].style.opacity = '0';
+                // Подготовка новой страницы
                 pages[page].classList.remove('hidden');
+                pages[page].classList.add('md:flex'); // Возвращаем flex для ПК
+                pages[page].style.opacity = '0';
                 
-                // Даем браузеру время отрендерить display: block перед изменением opacity
+                // Плавное появление
                 setTimeout(() => {
                     pages[page].style.opacity = '1';
-                    
-                    // Снимаем блокировку после завершения fade-in
                     setTimeout(() => { isEduAnimating = false; }, 300);
                 }, 50);
-            }, 300); // Ожидаем завершения transition-opacity (300ms)
+            }, 300);
 
+            // Обновляем визуальное состояние точек
             dots.forEach((el, i) => {
                 if (i === page) {
                     el.classList.add('bg-brand-accent', 'shadow-[0_0_10px_rgba(255,204,0,0.5)]');
@@ -778,7 +855,7 @@
             const swipeThreshold = 40; 
             if (Math.abs(touchStartY - touchEndY) > swipeThreshold && !isAnimating) {
                 if (touchStartY > touchEndY) {
-                    // Свайп ВВЕРХ (переход вниз)
+                    // Переход вниз (Свайп ВВЕРХ)
                     if (currentSlide === 6 && currentEduPage === 0) {
                         setEduPage(1);
                         isAnimating = true; setTimeout(() => { isAnimating = false; }, 600);
@@ -786,7 +863,7 @@
                         goToSlide(currentSlide + 1); 
                     }
                 } else {
-                    // Свайп ВНИЗ (переход вверх)
+                    // Переход вверх (Свайп ВНИЗ)
                     if (currentSlide === 6 && currentEduPage === 1) {
                         setEduPage(0);
                         isAnimating = true; setTimeout(() => { isAnimating = false; }, 600);
@@ -806,7 +883,7 @@
         window.addEventListener('wheel', (e) => {
             if (Math.abs(e.deltaY) > 30 && !isAnimating) {
                 if (e.deltaY > 0) {
-                    // Скролл ВНИЗ
+                    // Скролл вниз
                     if (currentSlide === 6 && currentEduPage === 0) {
                         setEduPage(1);
                         isAnimating = true; setTimeout(() => { isAnimating = false; }, 600);
@@ -814,7 +891,7 @@
                         goToSlide(currentSlide + 1);
                     }
                 } else {
-                    // Скролл ВВЕРХ
+                    // Скролл вверх
                     if (currentSlide === 6 && currentEduPage === 1) {
                         setEduPage(0);
                         isAnimating = true; setTimeout(() => { isAnimating = false; }, 600);
